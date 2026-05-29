@@ -10,6 +10,20 @@ const avengers = [
   "Spiderman",
   "Captain M.",
 ];
-function findLongestWord(stringList) {
-  // Completar código
+
+function findLongestWord(lista) {
+
+  let palabraMasLarga = lista[0];
+
+  for (let i = 1; i < lista.length; i++) {
+
+    if (lista[i].length > palabraMasLarga.length) {
+      palabraMasLarga = lista[i];
+    }
+  }
+
+  console.log(`La palabra más larga es ${palabraMasLarga}`);
+  return palabraMasLarga;
 }
+
+findLongestWord(avengers);
