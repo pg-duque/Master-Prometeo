@@ -18,7 +18,7 @@ const cartoons = [
 // Añade tu código de bucle aquí
 
 //Almacenamos el nombre de la peli en una variable, y el año de salida en otra, para ir comparándolo
-//Le damos un valor de 3000 al año de salida para asegurarnos de que el primer resultado va a ser menor
+//Le damos un valor de 3000 al año de salida para asegurarnos de que el primer resultado va a ser anterior
 let earliestDebut = 3000;
 let earliestCartoon = '';
 
