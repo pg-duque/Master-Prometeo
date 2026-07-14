@@ -37,6 +37,7 @@ const users = [
   },
 ];
 
+// Almacenamos la suma de los volúmenes y las veces que aparecen los sonidos
 let totalVolume = 0;
 let soundTimes = 0;
 
