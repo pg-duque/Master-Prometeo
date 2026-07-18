@@ -8,7 +8,7 @@ const users = [
 ];
 
 const userNames = users.map((user) => {
-  return user.name;
+	return user.name;
 });
 
 console.log(userNames);

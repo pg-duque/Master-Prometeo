@@ -8,7 +8,7 @@ const streamers = [
 ];
 
 const lolStreamers = streamers.filter((streamer) => {
-  return streamer.gameMorePlayed === 'League of Legends';
+	return streamer.gameMorePlayed === 'League of Legends';
 });
 
 console.log(lolStreamers);

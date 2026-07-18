@@ -4,25 +4,25 @@
 // Además, pon el valor de la propiedad .gameMorePlayed a MAYUSCULAS cuando
 // .age sea mayor que 35.
 const streamers = [
-	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
-	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
-	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
-	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+    {name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+    {name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+    {name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+    {name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
 ];
 
 const legendsStreamers = streamers
-  .filter((streamer) => {
-    return streamer.gameMorePlayed.includes('Legends');
-  })
-  .map((streamer) => {
-    if (streamer.age > 35) {
-      return {
-        ...streamer,
-        gameMorePlayed: streamer.gameMorePlayed.toUpperCase()
-      };
-    }
+    .filter((streamer) => {
+      return streamer.gameMorePlayed.includes('Legends');
+    })
+    .map((streamer) => {
+      if (streamer.age > 35) {
+        return {
+          ...streamer,
+          gameMorePlayed: streamer.gameMorePlayed.toUpperCase()
+        };
+      }
 
-    return streamer;
-  });
+      return streamer;
+    });
 
 console.log(legendsStreamers);

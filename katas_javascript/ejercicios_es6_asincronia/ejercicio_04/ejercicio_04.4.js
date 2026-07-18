@@ -9,7 +9,7 @@ const streamers = [
 ];
 
 const streamersWithU = streamers.filter((streamer) => {
-  return streamer.name.includes('u');
+ 	 return streamer.name.includes('u');
 });
 
 console.log(streamersWithU);
