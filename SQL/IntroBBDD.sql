@@ -6,7 +6,7 @@ SELECT
 	flight_id   AS id_vuelo, 
 	status      AS estado
 FROM flights
-WHERE status = 'On Time'
+WHERE status = 'On Time';
 
 /* 
 2. Escribe una consulta que extraiga todas las columnas de la tabla bookings y refleje todas las reservas 
@@ -32,7 +32,7 @@ revisad las tablas y elegid la que corresponda.
 SELECT
 	*
 FROM airplanes_data
-ORDER BY range DESC
+ORDER BY range DESC;
 
 -- Elijo el rango para darles una ordenación
 
@@ -74,7 +74,7 @@ las personas que se llaman Irina.
 SELECT
 	*
 FROM tickets
-WHERE passenger_name LIKE '%Irina%'
+WHERE passenger_name LIKE '%Irina%';
 
 -- Uso % por delante y por detrás por si hay algun tipo de nombre compuesto tipo Maria Irina o algo así 
 -- (no creo siendo rusos pero nunca se sabe)
@@ -89,7 +89,7 @@ SELECT
 FROM airports_data	AS ad
 GROUP BY ad.city
 HAVING COUNT(city) > 1
-ORDER BY COUNT(city) DESC
+ORDER BY COUNT(city) DESC;
 
 -- Comprobamos que la consulta está bien hecha, por ejemplo viendo si hay 6 aeropuertos en Chicago
 
@@ -129,7 +129,7 @@ SELECT
 FROM tickets
 GROUP BY book_ref
 HAVING COUNT(ticket_no) > 1
-ORDER BY COUNT(ticket_no) DESC
+ORDER BY COUNT(ticket_no) DESC;
 
 /*
 9. Vuelos con retraso de salida superior a una hora.
